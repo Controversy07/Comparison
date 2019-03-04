@@ -1,0 +1,332 @@
+.body
+{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+}
+
+.body:before 
+{
+    content: "";
+    position: absolute;
+    background-image: url(lightBG.png);
+    background-size: contain;
+    z-index: -1; /* Keep the background behind the content */
+    height: 20%; width: 20%; 
+
+    transform: scale(5);
+    transform-origin: top left;
+}
+
+#head
+{
+    display: block;
+    width: fit-content;
+    overflow: auto;
+}
+
+
+.heading
+{
+    font-family: Roboto Slab;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 70px;
+    height: 81px;
+    color: #202020;
+    width: 328px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.second_desc
+{
+    font-family: Roboto Slab;
+    color: #202020;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.result_desc
+{
+   font-family: Roboto Slab;
+    color: #202020;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    color:#0190d0; 
+    cursor: pointer;
+}
+
+.desc
+{
+    font-family: Roboto Slab;
+    color: #202020;
+    text-align: center;
+    font-size: 20px;
+}
+
+.centre_select
+{
+    width: 475px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.hide
+{
+    display:none;
+}
+
+select.select
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+}
+
+img.displayed 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+
+ .footer
+{
+    background-image: url(git-cat.png);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 145px;
+    height: 100px;
+    top: 220px;
+    display: block;
+    margin: auto;
+    background-size: 90%;
+}
+
+.profile_dp 
+{
+    display: inline-block;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+    top: 2.5px;
+    background-size: cover;
+    position: relative;
+    background-position: -36px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    border: solid 6px #ffffff;
+
+    background-position: left top;
+    background-image: url(white-git-dp.png);
+    background-repeat: no-repeat;
+}
+
+
+.profile_dp:hover 
+{
+    border-color: red;
+}
+
+.up_head .small_heading
+{
+    width: 270px;
+    height: 57px;
+    font-size: 35px;
+}
+
+.up_head .desc
+{
+    display:none;
+}
+
+.up_head #dp_space
+{
+    display:block;
+}
+
+.up_head {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#profile_img
+{
+    left:40px;
+    
+}
+
+.hover_cross
+{
+    display:none;
+    
+}
+
+#git_img
+{   
+    right: 15px;
+    background-image: url(white-git-dp.png);
+}
+
+.fa 
+{
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+font-size: 17px;
+margin-right: 5px;
+transform: rotate(90deg);
+
+}
+
+.block
+{
+width: 250px;
+height: 292px;
+box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+background-color: #ffffff;
+font-family: Roboto Slab;
+margin-left: 4px;
+margin-top: 50px;
+border-radius: 10px;
+
+}
+
+.Rectangle 
+{
+width: 202px;
+height: 44px;
+background-color: rgba(63, 95, 109, 0.05);
+margin: 20px;
+}
+
+.basic_info
+{
+padding:25px;
+margin-bottom: 40px;
+}
+.photo
+{
+display: inline-block;
+float: left;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+margin-right: 10px;
+
+    background-position: left top;
+    background-image: url(https://avatars3.githubusercontent.com/u/35418546?v=4);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bio
+{
+margin-left: 10px;
+display: inline-block;
+float: left;
+}
+
+.name
+{
+    font-size: 14px;
+}
+
+.username
+{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.41);
+}
+
+.info
+{
+font-size: 13px;
+color:rgba(0, 0, 0, 0.41);
+display:inline-block;
+float:left;
+}
+
+.Rectangle span
+{
+padding: 12px;
+}
+
+.value
+{
+display:inline-block;
+float:right;
+font-size: 13px;
+
+}
+
+.result_tab
+{
+width: 60%;
+margin: auto;
+}
+
+#right_sele
+{
+float:right;
+z-index:1;
+}
+
+#left_sele
+{
+float: left;
+z-index:1;
+}
+
+#result_space #head
+{
+margin-bottom:80px;
+}
+
+.winner
+{
+width: 258px;
+height: 347px;
+background-color: #0190d0; 
+border-radius: 10px;
+}
+
+.comparison-avatar {
+    height: inherit;
+}
+
+.compare_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.winner .notfication
+{
+display:block !important;
+}
+
+.notfication
+{
+color: white;
+font-family: Roboto Slab;
+position: absolute;
+margin-top: 10px;
+margin-left: 100px;
+}
